@@ -19,6 +19,11 @@ function App() {
       calculateTip()
       calculateTotal()
     }
+
+    return () => {
+      calculateTip()
+      calculateTotal()
+    }
   }, [persons, tip, bill, calculateTip, calculateTotal])
 
   function handleCustom(e) {
