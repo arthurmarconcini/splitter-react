@@ -19,7 +19,7 @@ function App() {
       calculateTip()
       calculateTotal()
     }
-  }, [persons, tip, bill])
+  }, [persons, tip, bill, calculateTip, calculateTotal])
 
   function handleCustom(e) {
     setTip(e.target.value)
