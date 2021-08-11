@@ -21,10 +21,12 @@ function App() {
     }
 
     return () => {
-      calculateTip()
-      calculateTotal()
+      if (bill && tip && persons) {
+        calculateTip()
+        calculateTotal()
+      }
     }
-  }, [persons, tip, bill, calculateTip, calculateTotal])
+  }, [persons, tip, bill])
 
   function handleCustom(e) {
     setTip(e.target.value)
