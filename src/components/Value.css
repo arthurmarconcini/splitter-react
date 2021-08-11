@@ -1,0 +1,21 @@
+.value-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.value-text h1 {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.value-text span {
+  font-size: 12px;
+  color: hsl(184, 12%, 76%);
+}
+
+.value-total {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--strong-cyan);
+}

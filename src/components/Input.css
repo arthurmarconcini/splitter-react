@@ -1,0 +1,37 @@
+.content-input {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.content-input label {
+  font-weight: bold;
+  color: hsl(184, 12%, 76%);
+}
+
+.input-area {
+  height: 40px;
+  padding: 0 20px;
+
+  background-color: var(--fulllight-grayish-cyan);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-area img {
+  width: 15px;
+}
+
+.input-area input {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--dark-grayish-cyan);
+  outline: none;
+  border: none;
+  appearance: textfield;
+  background-color: var(--fulllight-grayish-cyan);
+  text-align: right;
+}
