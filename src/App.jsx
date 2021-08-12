@@ -15,16 +15,19 @@ function App() {
   const [total, setTotal] = useState(0)
 
   useEffect(() => {
+    function calculateTip() {
+      const tipTotal = (bill * tip) / 100
+      setTipAmount(tipTotal / persons)
+    }
+
+    function calculateTotal() {
+      let calculo = (bill + (bill / 100) * tip) / persons
+      setTotal(calculo)
+    }
+
     if (bill && tip && persons) {
       calculateTip()
       calculateTotal()
-    }
-
-    return () => {
-      if (bill && tip && persons) {
-        calculateTip()
-        calculateTotal()
-      }
     }
   }, [persons, tip, bill])
 
@@ -42,16 +45,6 @@ function App() {
 
   function handlePersons(e) {
     setPersons(+e.target.value)
-  }
-
-  function calculateTip() {
-    const tipTotal = (bill * tip) / 100
-    setTipAmount(tipTotal / persons)
-  }
-
-  function calculateTotal() {
-    let calculo = (bill + (bill / 100) * tip) / persons
-    setTotal(calculo)
   }
 
   function handleReset() {
