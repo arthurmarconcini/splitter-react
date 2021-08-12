@@ -1,6 +1,6 @@
 import './Value.css'
 
-export default ({ title, value }) => {
+const Value = ({ title, value }) => {
   return (
     <div className="value-area">
       <div className="value-text">
@@ -13,3 +13,5 @@ export default ({ title, value }) => {
     </div>
   )
 }
+
+export default Value

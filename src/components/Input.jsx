@@ -2,7 +2,7 @@ import './Input.css'
 import DollarIcon from '../images/icon-dollar.svg'
 import PersonIcon from '../images/icon-person.svg'
 
-export default props => {
+const Input = props => {
   return (
     <div className="content-input">
       <label htmlFor={props.name}>{props.name}</label>
@@ -25,3 +25,5 @@ export default props => {
     </div>
   )
 }
+
+export default Input
