@@ -8,7 +8,7 @@ const Value = ({ title, value }) => {
         <span>/ People</span>
       </div>
       <span className="value-total">
-        {value === NaN ? '0' : `$${value.toFixed(2)}`}
+        {isNaN(value) ? '0' : `$${value.toFixed(2)}`}
       </span>
     </div>
   )
