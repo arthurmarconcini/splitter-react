@@ -122,7 +122,15 @@ function App() {
         >
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Arthur Marconcini Ramos</a>.
+        . Coded by{' '}
+        <a
+          href="https://www.github.com/arthurmarconcini"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Arthur Marconcini Ramos
+        </a>
+        .
       </div>
     </div>
   )
